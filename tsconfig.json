@@ -1,0 +1,23 @@
+{
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.d.ts",
+    "src/**/*.tsx",
+    "src/**/*.vue",
+    "types/**/*.d.ts",
+    "types/**/*.ts",
+    "vite.config.ts"
+  ],
+  "exclude": ["node_modules"],
+  "types": ["vite/client", "element-plus/global"],
+  "compilerOptions": {
+    "target": "es2020",
+    "emitDeclarationOnly": true,
+    "declaration": true,
+    "strict": false,
+    "outDir": "dist/",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true
+  }
+}

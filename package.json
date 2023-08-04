@@ -1,0 +1,38 @@
+{
+  "name": "micro-app-auth",
+  "version": "1.0.0",
+  "description": "wechat microApp or other microApp user Auth lib",
+  "scripts": {
+    "build": "vite build"
+  },
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
+    }
+  },
+  "types": "./src/index.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "micro-app-auth"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lupeiwen0/micro-app-auth.git"
+  },
+  "author": "lu xi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lupeiwen0/micro-app-auth/issues"
+  },
+  "homepage": "https://github.com/Lupeiwen0/micro-app-auth#readme",
+  "devDependencies": {
+    "@types/node": "^20.4.7",
+    "vite": "^4.4.8"
+  }
+}
