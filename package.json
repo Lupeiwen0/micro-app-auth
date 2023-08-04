@@ -1,6 +1,6 @@
 {
   "name": "micro-app-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "wechat microApp or other microApp user Auth lib",
   "scripts": {
     "build": "vite build"
