@@ -28,7 +28,7 @@ class CheckAuthClient {
     this.scopeCode = `scope.${config.scope}`;
   }
 
-  checkTargetAuth() {
+  checkAuth() {
     return new Promise((resolve, reject) => {
       this.target.getSetting({
         success: (res) => {
@@ -56,7 +56,7 @@ class CheckAuthClient {
   }
 
   async execute(name: ExecuteName, options: ExecuteOptions) {
-    await this.checkTargetAuth();
+    await this.checkAuth();
     this.target[name](options);
   }
 }
